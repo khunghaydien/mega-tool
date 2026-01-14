@@ -1,10 +1,10 @@
 'use client';
 import { Suspense } from "react";
 
-export default function Home() {
+export default function About() {
     return (
         <Suspense fallback={null}>
-            <div>Home</div>
+            <div>About</div>
         </Suspense>
     );
 }

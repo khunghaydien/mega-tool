@@ -6,6 +6,7 @@ import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 import "antd/dist/reset.css";
+import { HeaderLanding } from "@/components/layout/HeaderLanding";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default async function RootLayout({
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
             <AntdProvider>
+              <HeaderLanding />
               {children}
             </AntdProvider>
           </NextIntlClientProvider>
